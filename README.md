@@ -70,6 +70,8 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 👉 **3D Product Scene with Realistic Lighting System**: Showcase products in lifelike 3D environments for maximum visual impact.
 
+👉 **Smooth Size Transition Animation**: Switch between 14-inch and 16-inch views with a centered animated size transition for a more polished product interaction.
+
 👉 **Animate 3D Model on Scroll**: Create immersive interactions by animating 3D models based on user scroll position.
 
 👉 **ScrollTrigger Effects**: Power scroll-based animations and timeline control with GSAP’s ScrollTrigger.
@@ -82,7 +84,19 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 👉 **Responsive Design**: Ensure fluid UI and adaptive GSAP animations across all screen sizes.
 
+👉 **Optimized Loading Strategy**: Below-the-fold sections are deferred, 3D-heavy code is split into separate chunks, and unnecessary eager asset loading has been reduced for a faster initial load.
+
 And many more, including code architecture and reusability.
+
+## <a name="performance">⚡ Performance Improvements</a>
+
+Recent updates focused on reducing initial load cost and smoothing the product-viewer experience:
+
+- Deferred non-critical sections until they approach the viewport
+- Split heavy Three.js and GSAP code into separate build chunks
+- Removed redundant MacBook model assets and consolidated to a single shared GLB
+- Compressed the laptop screen texture and reduced the size of several large decorative images
+- Reworked the 14-inch / 16-inch switcher to use a persistent 3D model with a smoother centered transition
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
